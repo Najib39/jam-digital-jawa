@@ -1,0 +1,43 @@
+body {
+    background: radial-gradient(circle, #2c3e50, #000000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ffcc;
+}
+
+.clock-card {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid rgba(0, 255, 204, 0.2);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#jam {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px #00ffcc;
+}
+
+#tanggal {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #bdc3c7;
+}
+
+/* Efek kedip pada titik dua */
+.kedip {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
